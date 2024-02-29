@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="theScore Android Phone App" configfailurepolicy="continue" verbose="10">
+
+    <parameter name="browser" value="Android"/>
+    <parameter name="screenSize" value="ANDROID_PHONE_APP"/>
+
+    <suite-files>
+        <suite-file path="theScoreAppTest.xml"/>
+    </suite-files>
+
+</suite>
