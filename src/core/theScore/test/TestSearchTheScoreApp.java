@@ -66,7 +66,7 @@ public class TestSearchTheScoreApp extends theScoreAppTest {
         TeamStatsPage teamStatsPage = new TeamStatsPage();
         teamStatsPage.clickTab(teamStatsPage.PAGE_NAME);
         teamStatsPage.verifyPageLoaded();
-        log(Status.INFO, "11: Teams stats page has loaded");
+        log(Status.INFO, "11: Team stats page has loaded");
 
         TeamPlayerStatsPage teamPlayerStatsPage = new TeamPlayerStatsPage();
         teamPlayerStatsPage.clickTab(teamPlayerStatsPage.PAGE_NAME);

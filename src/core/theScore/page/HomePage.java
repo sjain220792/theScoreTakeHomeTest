@@ -17,10 +17,10 @@ public class HomePage extends AbstractAppPage {
     public void verifyPageLoaded() {
         super.verifyPageLoaded();
         if (isMobileElementPresent(userIcon)) {
-            Assert.assertTrue(waitUntilElementIsPresent(bottomNavigationPanel).size() > 0, "Welcome Icon is not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(messageIcon).size() > 0, "Welcome Text is not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(searchBar).size() > 0, "Get Started Button is not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(userIcon).size() > 0, "Login in link not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(bottomNavigationPanel).size() > 0, "Bottom navigation panel is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(messageIcon).size() > 0, "Message Icon is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(searchBar).size() > 0, "Home search bar is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(userIcon).size() > 0, "User icon not loaded");
         }
     }
 

@@ -16,13 +16,13 @@ public class TeamPlayerStatsPage extends AbstractAppPage {
     public void verifyPageLoaded(String locator) {
         super.verifyPageLoaded();
         if (isMobileElementPresent(topNavigationPane)) {
-            Assert.assertTrue(waitUntilElementIsPresent(topNavigationPane).size() > 0, "Welcome Icon is not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(backButton).size() > 0, "Welcome Text is not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(teamLogo).size() > 0, "Get Started Button is not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(favIcon).size() > 0, "Login in link not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(playersTable).size() > 0, "Login in link not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(playersStats).size() > 0, "Login in link not loaded");
-            Assert.assertTrue(isMobileElementPresent(getGenericText(locator)));
+            Assert.assertTrue(waitUntilElementIsPresent(topNavigationPane).size() > 0, "Top navigation pane is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(backButton).size() > 0, "Back button is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(teamLogo).size() > 0, "Team logo is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(favIcon).size() > 0, "Favourite icon is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(playersTable).size() > 0, "Players table is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(playersStats).size() > 0, "Player stats is not loaded");
+            Assert.assertTrue(isMobileElementPresent(getGenericText(locator)), "Correct team is not loaded");
         }
     }
 }

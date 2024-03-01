@@ -13,10 +13,10 @@ public class CustomiseNotificationsPage extends AbstractAppPage {
     public void verifyPageLoaded() {
         super.verifyPageLoaded();
         if (isMobileElementPresent(neverMissAGameBanner)) {
-            Assert.assertTrue(waitUntilElementIsPresent(neverMissAGameBanner).size() > 0, "Choose favourite team text is not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(neverMissAGameTitle).size() > 0, "Favourites icon is not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(doneButton).size() > 0, "Continue button is not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(notificationsOptions).size() > 0, "Search bar is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(neverMissAGameBanner).size() > 0, "Never miss a game banner is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(neverMissAGameTitle).size() > 0, "Never miss a game title is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(doneButton).size() > 0, "Done button is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(notificationsOptions).size() > 0, "Notifications options is not loaded");
         }
     }
 

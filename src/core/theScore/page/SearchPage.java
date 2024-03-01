@@ -16,10 +16,10 @@ public class SearchPage extends AbstractAppPage {
     public void verifyPageLoaded() {
         super.verifyPageLoaded();
         if (isMobileElementPresent(topNavigationPanel)) {
-            Assert.assertTrue(waitUntilElementIsPresent(topNavigationPanel).size() > 0, "Welcome Icon is not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(backButton).size() > 0, "Welcome Text is not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(searchBar).size() > 0, "Get Started Button is not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(resultList).size() > 0, "Login in link not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(topNavigationPanel).size() > 0, "Top navigation panel is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(backButton).size() > 0, "Back button is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(searchBar).size() > 0, "Search bar is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(resultList).size() > 0, "Search results list not loaded");
         }
     }
 

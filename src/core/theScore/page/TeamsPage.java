@@ -13,11 +13,11 @@ public class TeamsPage extends AbstractAppPage {
     public void verifyPageLoaded(String team) {
         super.verifyPageLoaded();
         if (isMobileElementPresent(topNavigationPane)) {
-            Assert.assertTrue(waitUntilElementIsPresent(topNavigationPane).size() > 0, "Welcome Icon is not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(backButton).size() > 0, "Welcome Text is not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(teamLogo).size() > 0, "Get Started Button is not loaded");
-            Assert.assertTrue(waitUntilElementIsPresent(favIcon).size() > 0, "Login in link not loaded");
-            Assert.assertTrue(isMobileElementPresent(getGenericText(team)), "Login in link not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(topNavigationPane).size() > 0, "Top navigation pane is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(backButton).size() > 0, "Back button is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(teamLogo).size() > 0, "Team logo is not loaded");
+            Assert.assertTrue(waitUntilElementIsPresent(favIcon).size() > 0, "Favourite icon is not loaded");
+            Assert.assertTrue(isMobileElementPresent(getGenericText(team)), "Correct team is not loaded");
         }
     }
 }

@@ -5,7 +5,7 @@
     <parameter name="screenSize" value="ANDROID_PHONE_APP"/>
 
     <suite-files>
-        <suite-file path="theScoreAppTest.xml"/>
+        <suite-file path="theScoreAppSearchTest.xml"/>
     </suite-files>
 
 </suite>
