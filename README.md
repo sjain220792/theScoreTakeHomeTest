@@ -55,8 +55,8 @@ Writing automation tests that finds a league, team, or player within theScore ap
 4. Start the Android Emulator/Device.
 5. To run Appium on your local system, install Node.js if it doesn't exist already from _https://nodejs.org/en/download/_.
 6. After installation is complete, restart the terminal and run the command -> node –version. Mac users can use the node -v and npm -v commands to verify the installation and version details.
-7. To install Appium, run the following command <npm install -g appium>.
-8. For the purposes of this test, please install the Android driver for Appium by running this command - <appium driver install uiautomator2>.
+7. To install Appium, run the following command -> `npm install -g appium`.
+8. For the purposes of this test, please install the Android driver for Appium by running this command -> `appium driver install uiautomator2`.
 9. Run the Appium server in a Command Prompt/PowerShell window using the following command:`appium -a 127.0.0.1 -cp 4723 -pa /wd/hub`.
 10. The test is now ready to execute and the test can be run by executing a xml file.
 11. Run the `Android_Phone.xml` file under `src/core/theScore/suite/Android_Phone.xml`. Please ensure to set correct properties as below:
